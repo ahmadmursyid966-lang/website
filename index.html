@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Kelas</title>
+    <style>
+        /* CSS untuk styling dasar */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        section {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang di Website Kelas 7 ibnu sina</h1>
+    </header>
+    
+    <nav>
+        <a href="#NOTE">NOTE</a>
+        <a href="#STRUKTUR KELAS">STRUKTUR KELAS</a>
+        <a href="#ABSEN">ABSEN</a>
+        <a href="#MURID TERCERDAS">MURID TERCERDAS</a>
+        <a href="#PELAJARAN YANG DI SUKAI">PELAJARAN YANG DI SUKAI</a>
+        <a href="KEGIATAN YANG PERNAH DILAKUKAN">FOTO SAAT KEGIATAN</a>
+    </nav>
+    
+    <div class="container">
+        <section id="NOTE">
+            <h2>NOTE</h2>
+            <p>kelas yang berisi pejuang kesuksesan di masa depan</p>
+            <p>dan berisi semangat yang luar biasa 🔥</p>
+        </section> 
+        
+        <section id="STRUKTUR KELAS">
+            <h2>Struktur kelas</h2>
+            <ul>
+                <li>wali kelas: M.Nur ikhsan</li>
+                <li>ketua kelas: Ahmad mursyid</li>
+                <li>wakil ketua kelas: Muhammad kasyatha.T</li>
+                <li>Sekretaris: Umar syarief.s</li>
+                <li>Bendahara: Hikal hijazi.J</li>
+
+        </section>
+        
+        <section id="ABSEN">
+            <h2>Absen dong yang udah masuk website ini</h2>
+            <ul id="daftar-siswa">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <input type="text" id="nama-baru" placeholder="Tambah nama siswa">
+            <button onclick="tambahSiswa()">Tambah Siswa</button>
+        </section>
+        
+        <section id="=MURID TERCERDAS">
+            <h2>Murid tercerdas di kelas ini adalah...</h2>
+            <u1 id="MURID TERCERDAS"></u1>
+            <li> 1. Umar syarief.s</li>
+            <li> 2. Bintang akbar.s</li>
+            <li> 3. M.Rafa Al Hafidz</li>
+        </section>
+
+<section id="PELAJARAN YANG DI SUKAI">
+    <h2>Pelajaran favorite di kelas ini</h2>
+    <u1 id="PELAJARAN YANG DI SUKAI">
+        <li> 1. ips</li>
+        <li> 2. ppkn</li>
+        <li> 3. art n craft</li>
+        <li> 4. english</li>
+
+    </div>
+  
+    
+    <script>
+        // JavaScript untuk interaktivitas sederhana
+        function tambahSiswa() {
+            const nama = document.getElementById('nama-baru').value;
+            if (nama) {
+                const list = document.getElementById('daftar-siswa');
+                const newItem = document.createElement('li');
+                newItem.textContent = nama;
+                list.appendChild(newItem);
+                document.getElementById('nama-baru').value = '';
+            } else {
+                alert('Masukkan nama siswa!');
+            }
+        }
+    </script>
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Info Sekolah</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- TAB -->
+  <div class="tabs">
+    <button class="tab active">Info Sekolah</button>
+    <button class="tab">
+  </div>
+
+  <!-- CARD BERITA -->
+  <div class="card">
+    <img src="ibnu.jpeg" width="200PX" alt="foto berita">
+    <div class="card-content">
+      <span class="label">INFORMASI DAN FOTO</span>
+      <h3>ini foto pas food preneur</h3>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="pp ig.jpeg" width="200PX" alt="foto berita">
+    <div class="card-content">
+      <span class="label">INFORMASI DAN FOTO</span>
+      <h3>ini adalah photo profile kelas kita</h3>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="7.jpeg" width="200px"="foto berita">
+    <div class="card-content">
+      <span class="label">INFORMASI DAN FOTO</span>
+      <h3>ini foto pas saat hari guru 2025</h3>
+    </div>
+  </div>
+
+</div>
+
+
+
+</body>
+</html>
